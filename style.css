@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+header nav ul li {
+    display: inline-block;
+    color: black;
+    
+}
+
+header nav ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+header nav ul a:hover {
+    text-decoration: underline;
+}
+
+header .open-list {
+    height: 35px;
+    width: 35px;
+    padding-top: 6px;
+    padding-right: 2px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+header .open-list img {
+    height: 20px;
+    display: block;
+    margin: auto;
+}
+
+header .google_acct {
+    padding-top: 1.5px;
+    padding-right: 1px;
+    padding-top: 3px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+header .google_acct:hover, header .open-list:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    transition: 0.3s;
+}
+
+header .google_acct h4 {
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    height: 27px;
+    width: 27px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px;
+    color: #fff;
+}
+
+
+.center {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.center input {
+    width: 100%;
+    height: 38px;
+    outline: none;
+    border: 0;
+}
+
+.center .search {
+    display: flex;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 50px;
+    border: 1px solid rgb(219, 218, 218)    ;
+}
+
+.center .search:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.center form {
+    flex: 1;
+}
+
+.center i, .center .google-img {
+    padding: 10px 15px;
+}
+
+.center i {
+    padding-top: 12px;
+}
+
+.center h1 {
+    font-size: 80px;
+    padding: 25px;
+}
+
+.center h1 .blue {
+    color: blue;
+}
+
+.center h1 .red {
+    color: red;
+}
+
+.center h1 .orange {
+    color: orange;
+}
+
+.center h1 .green {
+    color: green;
+}
+
+.center .feel_and_search {
+    padding: 20px;
+}
+
+.center .feel_and_search div {
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.center .feel_and_search div p {
+    font-size: 15px;
+    padding: 5px 20px;
+    background-color: rgb(250, 249, 249);
+    border-radius: 5px;
+}
+
+.center .feel_and_search div:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.center .languages ul {
+    list-style: none;
+}
+
+.center .languages li {
+    display: inline-block;
+}
+
+.center .languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.center .languages a {
+    text-decoration: none;
+    padding: 2px;
+    margin: 3px;
+    font-weight: 500;
+}
+
+.center .languages a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+footer  {
+    margin-top: 12%;
+    background: rgb(243, 243, 243);
+}
+
+footer p {
+    width: 100%;
+    padding: 10px;
+    color: rgb(112, 112, 112);
+}
+footer .bottom {
+    display: flex;
+    border-top: 1px solid rgb(219, 218, 218); 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .bottom ul {
+    list-style: none;
+}
+
+footer .bottom li {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+footer .bottom li a {
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+}
+
+footer .bottom li a:hover {
+    text-decoration: underline;
+}
+
+footer .bottom .carbon {
+    text-align: center;
+    margin-right: 12%;
+}
+
+@media(max-width: 812px) {
+    footer .bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer .bottom .carbon {
+        display: none;
+    }
+    footer ul {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 450px) {
+    footer  {
+        margin-top: 70%;
+    }
+   
+    .center .search {
+        margin: 10px;
+    }
+}
